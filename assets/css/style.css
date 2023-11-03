@@ -59,3 +59,16 @@ header {
     margin-top: 20px;
     margin-bottom: 90px;
 }
+
+.list-inline-item:not(:last-child) {
+    margin: 0;
+}
+
+.menu-container {
+    font-size: 0;
+}
+
+#nav li {
+    font-size: 14px;
+    padding: 0;
+}
