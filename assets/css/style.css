@@ -188,7 +188,8 @@ footer {
 }
 
 #footer-details {
-    padding: 20px;
+    padding: 1rem;
     display: flex;
     align-items: center;
+    padding-bottom: 0.25rem;
 }
