@@ -30,21 +30,17 @@
                 <div class="row no-gutters">
                     <div class="col">
                         <ul id="nav" class="list-inline menu-container">
-                            <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem">
+                            <li class="col-6 col-sm-4 ui-menu-color-home list-inline-item menuitem">
                                 <a href="#" class="hvr-sweep-to-bottom"><i class="fa-solid fa-house"
                                         aria-hidden="true"></i><span>Home</span></a>
                             </li>
-                            <li class="col-6 col-sm-3 ui-menu-color-resume list-inline-item menuitem">
+                            <li class="col-6 col-sm-4 ui-menu-color-resume list-inline-item menuitem">
                                 <a href="#" class="hvr-sweep-to-bottom"><i class="fa-solid fa-graduation-cap"
                                         aria-hidden="true"></i><span>Resume</span></a>
                             </li>
-                            <li class="col-6 col-sm-3 ui-menu-color-contact list-inline-item menuitem">
+                            <li class="col-6 col-sm-4 ui-menu-color-contact list-inline-item menuitem">
                                 <a href="#" class="hvr-sweep-to-bottom"><i class="fa-solid fa-comment"
                                         aria-hidden="true"></i><span>Contact</span></a>
-                            </li>
-                            <li class="col-6 col-sm-3 ui-menu-color-download list-inline-item menuitem">
-                                <a href="#" class="hvr-sweep-to-bottom"><i class="fa-solid fa-download"
-                                        aria-hidden="true"></i><span>Download</span></a>
                             </li>
                         </ul>
                     </div>
@@ -53,16 +49,77 @@
         </div>
     </header>
     <main>
-        <section class="container-fluid about-me">
+        <section class="container-fluid about">
             <div class="row row-table">
-                <div class="col-md-8 bg-color-three-reasons section-column">
+                <div class="col-12 col-md-4 bg-color-personal-info section-column">
                     <div class="row">
-                        <div class="col">
+                        <div class="col-12">
+                            <h3 class="section-heading uppercase">
+                                Personal Info
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="personal-info-item">
+                        <div class="key">
+                            <p class="uppercase">
+                                Name:
+                            </p>
+                        </div>
+                        <div class="value">
+                            <p>
+                                Dietke Steindel
+                            </p>
+                        </div>
+                    </div>
+                    <div class="personal-info-item">
+                        <div class="key">
+                            <p class="uppercase">
+                                Address:
+                            </p>
+                        </div>
+                        <div class="value">
+                            <p>
+                                25 Kilcoolaght Place
+                                <br>
+                                Killarney, V93 E7TY
+                                <br>
+                                Ireland
+                            </p>
+                        </div>
+                    </div>
+                    <div class="personal-info-item">
+                        <div class="key">
+                            <p class="uppercase">
+                                Phone:
+                            </p>
+                        </div>
+                        <div class="value">
+                            <p>
+                                0858701988
+                            </p>
+                        </div>
+                    </div>
+                    <div class="personal-info-item">
+                        <div class="key">
+                            <p class="uppercase">
+                                Email:
+                            </p>
+                        </div>
+                        <div class="value">
+                            <p>
+                                dietkeg@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8 bg-color-three-reasons section-column">
+                    <div class="row">
+                        <div class="col-12">
                             <h3 class="section-heading uppercase">About Me</h3>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                        <div class="col-12 col-md-4">
                             <div class="row">
                                 <div class="col-2">
                                     <i class="three-reasons-icon fa fa-question" aria-hidden="true"></i>
@@ -76,7 +133,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                        <div class="col-12 col-md-4">
                             <div class="row">
                                 <div class="col-2">
                                     <i class="three-reasons-icon fa fa-thumbs-up" aria-hidden="true"></i>
@@ -91,7 +148,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                        <div class="col-12 col-md-4">
                             <div class="row">
                                 <div class="col-2">
                                     <i class="three-reasons-icon fa fa-bolt" aria-hidden="true"></i>
@@ -105,6 +162,43 @@
                                     </p>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="container-fluid contact-form">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 section-column contact-title">
+                        <h3 class="section-heading uppercase">Contact Me</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col 12 col-md-4 section-column">
+                        <div class="form-group">
+                            <label for="name" class="uppercase">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="uppercase">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="uppercase">Subject</label>
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject"
+                                required>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8 section-column">
+                        <div class="form-group">
+                            <label for="message" class="uppercase">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5"
+                                placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="submit-button">
+                            <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
                     </div>
                 </div>
