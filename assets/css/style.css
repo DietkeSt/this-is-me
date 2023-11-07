@@ -399,6 +399,18 @@ button.btn-primary:hover {
     padding: 20px;
 }
 
+.form-group {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#name,
+#email,
+#subject {
+    width: 50%;
+}
+
 /* ---------------------------------------------Footer */
 
 footer {
@@ -457,7 +469,11 @@ footer {
         display: block;
     }
 
-    button.btn-primary {
+    button.btn-primary,
+    .form-group,
+    #name,
+    #email,
+    #subject {
         width: 100%;
     }
 }
