@@ -29,25 +29,31 @@
                         <h2 class="title">Full Stack Developer</h2>
                     </div>
                 </div>
-                <div class="row no-gutters">
-                    <div class="col">
+                <div class="row">
+                    <div class="col-12">
                         <ul id="nav" class="list-inline menu-container">
-                            <li class="col-4 ui-menu-color list-inline-item menuitem">
+                            <li class="col-md-3 ui-menu-color list-inline-item menuitem about-menu">
                                 <div class="menu-text">
                                     <a href="#about"><i class="fa-solid fa-user"
                                             aria-hidden="true"></i><span>About</span></a>
                                 </div>
                             </li>
-                            <li class="col-4 ui-menu-color list-inline-item menuitem">
+                            <li class="col-md-3 ui-menu-color list-inline-item menuitem resume-menu">
                                 <div class="menu-text">
                                     <a href="#resume"><i class="fa-solid fa-graduation-cap"
                                             aria-hidden="true"></i><span>Resume</span></a>
                                 </div>
                             </li>
-                            <li class="col-4 ui-menu-color list-inline-item menuitem">
+                            <li class="col-md-3 ui-menu-color list-inline-item menuitem contact-menu">
                                 <div class="menu-text">
                                     <a href="#contact"><i class="fa-solid fa-comment"
                                             aria-hidden="true"></i><span>Contact</span></a>
+                                </div>
+                            </li>
+                            <li class="col-md-3 ui-menu-color list-inline-item menuitem cv-menu">
+                                <div class="menu-text">
+                                    <a href="assets/cv/DietkeSteindel CV (1).pdf" target="_blank"><i
+                                            class="fa fa-download" aria-hidden="true"></i><span>CV</span></a>
                                 </div>
                             </li>
                         </ul>
@@ -283,41 +289,55 @@
                     </div>
                 </div>
         </section>
-        <section id="contact" class="container-fluid contact-form">
-            <div class="row col-12">
-                <div class="row col-12 col-md-4">
-                    <div class="section-column contact-title">
-                        <h3 class="section-heading uppercase">Map</h3>
-                    </div>
-                    <div id="map">
+        <section id="contact" class="container-fluid contact-section">
+            <div class="row col-12 contact-container">
+                <div class="col-12 col-md-4 section-column map">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="history-heading uppercase">
+                                Map
+                            </h3>
+                        </div>
 
+                        <div id="map" class="col-12">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2452.8686128598897!2d-9.51401262276156!3d52.06391597194516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48453b883c2f55eb%3A0x978430bfd3bbd329!2s25%20Kilcoolaght%20Place%2C%20Kilcoolaght%2C%20Killarney%2C%20Co.%20Kerry%2C%20V93%20E7TY!5e0!3m2!1sen!2sie!4v1699370618522!5m2!1sen!2sie"
+                                width="95%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-8 section-column contact-box">
-                    <div class="section-column contact-title">
-                        <h3 class="section-heading uppercase">Contact Me</h3>
+                <div class="col-12 col-md-8 contact-box section-column">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="section-heading uppercase">Contact Me</h3>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="name" class="uppercase">Name</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email" class="uppercase">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email"
-                            required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject" class="uppercase">Subject</label>
-                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject"
-                            required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message" class="uppercase">Message</label>
-                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your Message"
-                            required></textarea>
-                    </div>
-                    <div class="submit-button">
-                        <button type="submit" class="btn btn-primary uppercase">Submit</button>
+                    <div class="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="uppercase">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="uppercase">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="uppercase">Subject</label>
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="uppercase">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5"
+                                placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="submit-button">
+                            <button type="submit" class="btn btn-primary uppercase">Submit</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -353,6 +373,17 @@
     </footer>
     <script>
         document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+
+    <script>
+        const contactForm = document.querySelector('.contact-form');
+
+        // Get its computed height
+        const contactFormHeight = window.getComputedStyle(contactForm).height;
+
+        // Apply the same height to the "other-element"
+        const map = document.querySelector('#map');
+        map.style.height = contactFormHeight;
     </script>
 </body>
 
