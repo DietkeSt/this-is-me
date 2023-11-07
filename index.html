@@ -17,9 +17,11 @@
 <body>
     <header>
         <div class="row no-gutters">
-            <a href="index.html" class="col-md-4 logo">
-
-            </a>
+            <div class="logo-container col-12 col-md-4">
+                <a href="index.html" class="logo">
+                    <div class="logo-content"></div>
+                </a>
+            </div>
             <div class="col-md-8">
                 <div class="row no-gutters bg-color-name-title">
                     <div class="col heading">
@@ -30,17 +32,23 @@
                 <div class="row no-gutters">
                     <div class="col">
                         <ul id="nav" class="list-inline menu-container">
-                            <li class="col-4 ui-menu-color-home list-inline-item menuitem">
-                                <a href="#about" class="hvr-sweep-to-bottom"><i class="fa-solid fa-user"
-                                        aria-hidden="true"></i><span>About</span></a>
+                            <li class="col-4 ui-menu-color list-inline-item menuitem">
+                                <div class="menu-text">
+                                    <a href="#about"><i class="fa-solid fa-user"
+                                            aria-hidden="true"></i><span>About</span></a>
+                                </div>
                             </li>
-                            <li class="col-4 ui-menu-color-resume list-inline-item menuitem">
-                                <a href="#resume" class="hvr-sweep-to-bottom"><i class="fa-solid fa-graduation-cap"
-                                        aria-hidden="true"></i><span>Resume</span></a>
+                            <li class="col-4 ui-menu-color list-inline-item menuitem">
+                                <div class="menu-text">
+                                    <a href="#resume"><i class="fa-solid fa-graduation-cap"
+                                            aria-hidden="true"></i><span>Resume</span></a>
+                                </div>
                             </li>
-                            <li class="col-4 ui-menu-color-contact list-inline-item menuitem">
-                                <a href="#contact" class="hvr-sweep-to-bottom"><i class="fa-solid fa-comment"
-                                        aria-hidden="true"></i><span>Contact</span></a>
+                            <li class="col-4 ui-menu-color list-inline-item menuitem">
+                                <div class="menu-text">
+                                    <a href="#contact"><i class="fa-solid fa-comment"
+                                            aria-hidden="true"></i><span>Contact</span></a>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -196,7 +204,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-8 bg-color-three-reasons section-column">
+                <div class="col-12 col-md-8 bg-color-my-skills section-column">
                     <div class="row">
                         <div class="col-12">
                             <h3 class="section-heading uppercase">My Skills</h3>
@@ -206,10 +214,10 @@
                         <div class="col-12 col-md-6">
                             <div class="row">
                                 <div class="col-2">
-                                    <i class="three-reasons-icon fa fa-tv" aria-hidden="true"></i>
+                                    <i class="my-skills-icon fa fa-tv" aria-hidden="true"></i>
                                 </div>
                                 <div class="col-10">
-                                    <h4 class="three-reasons-heading uppercase">Front End</h4>
+                                    <h4 class="my-skills-heading uppercase">Front End</h4>
                                     <p>
                                         I am a skilled in User Experience Design using the trinity of
                                         HTML/CSS/Javascript. I also have extensive experience in Front End Frameworks
@@ -221,10 +229,10 @@
                         <div class="col-12 col-md-6">
                             <div class="row">
                                 <div class="col-2">
-                                    <i class="three-reasons-icon fa fa-gears" aria-hidden="true"></i>
+                                    <i class="my-skills-icon fa fa-gears" aria-hidden="true"></i>
                                 </div>
                                 <div class="col-10">
-                                    <h4 class="three-reasons-heading uppercase">Back End</h4>
+                                    <h4 class="my-skills-heading uppercase">Back End</h4>
                                     <p>
                                         I specialize in data-driven web applications. Many of my projects utilize
                                         document-based data. I use Python and Django in conjunction with MongoDB to
@@ -244,29 +252,29 @@
                                 <span class="progress-type">HTML / HTML5</span>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar bg-success" role="progessbar" aria-valuenow="80"
-                                    aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                <div class="progress-bar" role="progessbar" aria-valuenow="80" aria-valuemin="0"
+                                    aria-valuemax="100" style="width:80%">
                                     <span class="sr-only">80% complete</span>
                                 </div>
                                 <span class="progress-type">CSS / CSS3</span>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar bg-info" role="progessbar" aria-valuenow="70" aria-valuemin="0"
+                                <div class="progress-bar" role="progessbar" aria-valuenow="70" aria-valuemin="0"
                                     aria-valuemax="100" style="width:70%">
                                     <span class="sr-only">70% complete</span>
                                 </div>
                                 <span class="progress-type">Javascript / jQuery</span>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar bg-warning" role="progessbar" aria-valuenow="80"
-                                    aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                <div class="progress-bar" role="progessbar" aria-valuenow="80" aria-valuemin="0"
+                                    aria-valuemax="100" style="width:80%">
                                     <span class="sr-only">80% complete</span>
                                 </div>
                                 <span class="progress-type">Django / Python</span>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar bg-danger" role="progessbar" aria-valuenow="80"
-                                    aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                <div class="progress-bar" role="progessbar" aria-valuenow="80" aria-valuemin="0"
+                                    aria-valuemax="100" style="width:80%">
                                     <span class="sr-only">80% complete</span>
                                 </div>
                                 <span class="progress-type">SQL / NoSQL</span>
@@ -308,7 +316,7 @@
                         </div>
                     </div>
                     <div class="col-12 submit-button section-column">
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary uppercase">Submit</button>
                     </div>
                 </div>
             </div>
@@ -325,7 +333,7 @@
                 <ul class="list-inline social-links">
                     <li class="list-inline-item">
                         <a href="#" target="_blank">
-                            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
                             <span class="sr-only">LinkedIn link</span>
                         </a>
                     </li>
@@ -334,7 +342,7 @@
             <div class="col-sm-4 text-center">
                 <p class="inline-block">
                     Download CV
-                    <a href="#" target="_blank" class="cv-pdf">
+                    <a href="assets/cv/DietkeSteindel CV (1).pdf" target="_blank" class="cv-pdf">
                         <i class="fa fa-download" aria-hidden="true"></i>
                         <span class="sr-only">Download link</span>
                     </a>
