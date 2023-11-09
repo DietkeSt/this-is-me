@@ -545,8 +545,7 @@ button.btn-primary:hover {
 }
 
 #name,
-#email,
-#subject {
+#emailaddress {
     width: 50%;
 }
 
