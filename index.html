@@ -13,6 +13,12 @@
     <script src="https://kit.fontawesome.com/1b4f98b43d.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/github-information.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("Mlo2Eju9GKfT9QKnE");
+        })();
+    </script>
     <title>Dietke Steindel</title>
 </head>
 
@@ -65,8 +71,8 @@
         </div>
     </header>
     <main>
-        <section id="about" class="container-fluid about">
-            <div class="row row-table">
+        <section id="about" class="container-fluid">
+            <div class="row row-table about">
                 <div class="col-12 col-md-4 bg-color-personal-info section-column">
                     <div class="row">
                         <div class="col-12">
@@ -348,29 +354,26 @@
                         </div>
                     </div>
                     <div class="contact-form">
-                        <div class="form-group">
-                            <label for="name" class="uppercase">Name</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name"
-                                required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="uppercase">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email"
-                                required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject" class="uppercase">Subject</label>
-                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject"
-                                required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message" class="uppercase">Message</label>
-                            <textarea class="form-control" id="message" name="message" rows="5"
-                                placeholder="Your Message" required></textarea>
-                        </div>
-                        <div class="submit-button">
-                            <button type="submit" class="btn btn-primary uppercase">Submit</button>
-                        </div>
+                        <form onsubmit="return sendMail(this);">
+                            <div class="form-group">
+                                <label for="name" class="uppercase">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="uppercase">Email</label>
+                                <input type="email" class="form-control" id="emailaddress" name="email"
+                                    placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="uppercase">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="5"
+                                    placeholder="Your Message" required></textarea>
+                            </div>
+                            <div class="submit-button">
+                                <button type="submit" class="btn btn-primary uppercase">Submit</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -413,8 +416,9 @@
         const contactFormHeight = window.getComputedStyle(contactForm).height;
 
         const map = document.querySelector('iframe');
-        map.style.height = contactFormHeight;
+        map.style.height = `calc(${contactFormHeight} / 2)`;
     </script>
+    <script src="assets/js/sendEmail.js"></script>
 </body>
 
 </html>

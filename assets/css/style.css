@@ -440,13 +440,13 @@ input#gh-username {
 
 .small-name {
     font-size: 22px;
-    color: #f4d8bf;
+    color: #eeaa81;
     font-style: italic;
 }
 
 .small-name a {
     font-size: 22px;
-    color: #f4d8bf;
+    color: #eeaa81;
     font-style: italic;
 }
 
@@ -455,21 +455,24 @@ input#gh-username {
 }
 
 .repo-list ul li a {
-    padding: 6px 9px;
+    padding: 8px 10px;
     display: block;
     float: left;
     margin-right: 10px;
     margin-bottom: 10px;
     text-decoration: none;
-    border: 1px solid #e67e22;
     border-radius: 25px;
     color: #fafafa;
-    background-color: #e67e22;
+    background-color: #000;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
 }
 
 .repo-list ul li a:hover {
     background-color: #f4d8bf;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #000;
 }
 
 #gh-user-data {
@@ -494,7 +497,7 @@ input#gh-username {
 }
 
 .github-data {
-    border: 2px solid #f4d8bf;
+    border: 2px solid #eeaa81;
     border-radius: 25px;
     padding: 1em;
 }
@@ -559,6 +562,24 @@ button.btn-primary:hover {
     border: 2px solid #e67e22;
     border-radius: 25px;
     width: 100%
+}
+
+p.success-message {
+    font-size: 20px;
+    color: #e67e22;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 2em;
+}
+
+button.btn-success {
+    height: 4vh;
+    padding: 0 10vw;
+    border-radius: 25px;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
 }
 
 /* ---------------------------------------------Footer */
