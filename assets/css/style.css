@@ -28,7 +28,8 @@ body {
     background: none;
 }
 
-.bg-color-work-history {
+.bg-color-work-history,
+.bg-color-education {
     background: none;
 
 }
@@ -475,6 +476,12 @@ input#gh-username {
     font-size: 18px;
     margin-top: 15px;
     font-weight: 300;
+}
+
+.github-data {
+    border: 2px solid #f4d8bf;
+    border-radius: 25px;
+    padding: 1em;
 }
 
 /* ---------------------------------------------Contact */
