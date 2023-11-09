@@ -283,6 +283,10 @@ header {
     padding-left: 1em;
 }
 
+.about h3 {
+    padding-top: 1em;
+}
+
 /* ---------------------------------------------Personal Info */
 
 .personal-info-item {
@@ -316,6 +320,17 @@ header {
 .personal-info-item .value {
     position: relative;
     width: 60%;
+}
+
+.personal-info-item .key {
+    width: 30%;
+    margin-right: 21px;
+    padding-top: 2px;
+    vertical-align: top;
+}
+
+.personal-info-item .value {
+    width: 80%;
 }
 
 /* ---------------------------------------------Skills */
@@ -492,6 +507,7 @@ input#gh-username {
 
 .contact-section {
     padding: 0;
+    padding-top: 2em;
     background: none;
     color: #000;
 }
@@ -542,6 +558,7 @@ button.btn-primary:hover {
     padding: 1em;
     border: 2px solid #e67e22;
     border-radius: 25px;
+    width: 100%
 }
 
 /* ---------------------------------------------Footer */
@@ -550,6 +567,7 @@ footer {
     background-color: #d2d5d4;
     color: #000;
     margin: 0;
+    padding-top: 2em;
 }
 
 .cv-pdf i {
@@ -673,6 +691,10 @@ footer {
 
     .box-margin-right {
         padding-right: 1em;
+    }
+
+    .personal-info-item .value {
+        width: 60%;
     }
 
 }
