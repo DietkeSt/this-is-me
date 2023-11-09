@@ -11,7 +11,8 @@ body {
 }
 
 .bg-color-three-reasons,
-.bg-color-my-skills {
+.bg-color-my-skills,
+.bg-color-github {
     background-color: #fafafa;
 }
 
@@ -19,7 +20,7 @@ body {
     border-top-left-radius: 25px;
 }
 
-.bg-color-my-skills {
+.bg-color-github {
     border-bottom-left-radius: 25px;
 }
 
@@ -392,6 +393,88 @@ header {
 
 .history-items {
     margin-bottom: 30px;
+}
+
+/* ---------------------------------------------GitHub Projects */
+
+div.gh-avatar img {
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    padding: 3px;
+}
+
+input#gh-username {
+    border-radius: 25px;
+    display: block;
+    max-width: 70%;
+    background: #fff;
+    padding: 4px 20px;
+    box-shadow: 1px 2px 3px -1px rgba(0, 0, 0, 0.4);
+    color: #666;
+    margin-bottom: 15px;
+    content: counter(name);
+}
+
+
+#loader {
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+
+.small-name {
+    font-size: 22px;
+    color: #f4d8bf;
+    font-style: italic;
+}
+
+.small-name a {
+    font-size: 22px;
+    color: #f4d8bf;
+    font-style: italic;
+}
+
+.repo-list ul li {
+    display: block;
+}
+
+.repo-list ul li a {
+    padding: 6px 9px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    border: 1px solid #e67e22;
+    border-radius: 25px;
+    color: #fafafa;
+    background-color: #e67e22;
+}
+
+.repo-list ul li a:hover {
+    background-color: #f4d8bf;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#gh-user-data {
+    display: flex;
+    flex-direction: column-reverse
+}
+
+#gh-user-data h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+#gh-user-data p {
+    font-size: 18px;
+}
+
+#gh-repo-data p {
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: 300;
 }
 
 /* ---------------------------------------------Contact */

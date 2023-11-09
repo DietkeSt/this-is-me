@@ -211,7 +211,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-12 col-md-8 bg-color-my-skills section-column">
                     <div class="row">
                         <div class="col-12">
@@ -290,14 +289,15 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
         <section id="github" class="container-fluid github">
-            <div class="row row-table">
-                <div class="col-12 col-md-4 bg-color-work-history section-column">
+            <div class="row">
+                <div class="col-12 col-md-4 bg-color-education section-column">
                     <div class="row">
                         <div class="col-12">
                             <h3 class="history-heading uppercase">
-                                View my Github projects
+                                Education
                             </h3>
                         </div>
                     </div>
@@ -308,20 +308,19 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-12 col-md-8 bg-color-my-skills section-column">
+                <div class="col-12 col-md-8 bg-color-github section-column">
                     <div class="row">
                         <div class="col-12">
                             <h3 class="section-heading uppercase">View my Github projects</h3>
-                            <h5 class="uppercase">You can also search on other user profiles</h5>
                         </div>
                     </div>
-                    <div class="center-form">
+                    <div class="github-data">
                         <input type="text" id="gh-username" value="DietkeSt" oninput="fetchGitHubInformation()" />
                         <div id="gh-user-data"></div>
                         <div id="gh-repo-data"></div>
                     </div>
                 </div>
+            </div>
         </section>
         <section id="contact" class="container-fluid contact-section">
             <div class="row col-12 contact-container">
@@ -411,10 +410,8 @@
     <script>
         const contactForm = document.querySelector('.contact-form');
 
-        // Get its computed height
         const contactFormHeight = window.getComputedStyle(contactForm).height;
 
-        // Apply the same height to the "other-element"
         const map = document.querySelector('iframe');
         map.style.height = contactFormHeight;
     </script>
